@@ -41,6 +41,7 @@ export function EducationSection() {
                   <div className="flex items-center gap-1">
                     <Award className="w-4 h-4 text-primary" />
                     <span className="font-semibold text-primary">CGPA: 8.33</span>
+                    <span className="text-gray-400">(up to 3rd semester)</span>
                   </div>
                 </div>
               </div>
@@ -64,7 +65,7 @@ export function EducationSection() {
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-1">
-                  Higher Secondary Certificate
+                  Higher Secondary Certificate (Science)
                 </h3>
                 <p className="text-primary font-semibold mb-3">Maharishi Vidya Mandir Matric Hr Sec School</p>
                 <div className="flex flex-wrap gap-4 text-sm text-gray-500">

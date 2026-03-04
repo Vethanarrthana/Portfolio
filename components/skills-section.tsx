@@ -8,16 +8,6 @@ export function SkillsSection() {
   const [activeCategory, setActiveCategory] = useState(0)
   const currentCategory = skills.categories[activeCategory]
 
-  const getBarWidth = (expertise: string) => {
-    switch (expertise) {
-      case "Expert": return "w-full"
-      case "Advanced": return "w-4/5"
-      case "Proficient": return "w-3/5"
-      case "Learning": return "w-2/5"
-      default: return "w-1/2"
-    }
-  }
-
   return (
     <section id="skills" className="py-20 bg-gray-50 border-b border-border">
       <div className="max-w-6xl mx-auto px-6">
@@ -33,9 +23,9 @@ export function SkillsSection() {
             <button
               key={index}
               onClick={() => setActiveCategory(index)}
-              className={`px-5 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 border ${
+              className={`px-5 py-2 rounded-lg text-sm font-semibold transition-all duration-200 border ${
                 activeCategory === index
-                  ? "bg-primary text-white border-primary"
+                  ? "bg-primary text-white border-primary shadow-sm"
                   : "bg-white text-gray-600 border-border hover:border-primary hover:text-primary"
               }`}
             >
@@ -47,7 +37,10 @@ export function SkillsSection() {
         {/* Skills grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
           {currentCategory.skills.map((skill) => (
-            <div key={skill.name} className="bg-white rounded-xl p-5 border border-border shadow-sm hover:shadow-md transition-shadow duration-200">
+            <div
+              key={skill.name}
+              className="bg-white rounded-xl p-5 border border-border shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+            >
               <div className="flex items-center gap-3 mb-2">
                 <span className="text-xl">{skill.icon}</span>
                 <span className="font-semibold text-gray-800">{skill.name}</span>
@@ -70,7 +63,10 @@ export function SkillsSection() {
               { platform: "SkillRack", icon: "⚡", badge: "300+ Problems", stat: "300+", desc: "Solved 300+ problems across difficulty levels, strengthening DSA." },
               { platform: "LeetCode", icon: "🧩", badge: "200+ Problems", stat: "200+", desc: "200+ algorithmic challenges covering arrays, trees, graphs & DP." },
             ].map((item, i) => (
-              <div key={i} className="bg-white rounded-xl p-6 border border-border shadow-sm hover:shadow-md transition-shadow duration-200 text-center">
+              <div
+                key={i}
+                className="bg-white rounded-xl p-6 border border-border shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 text-center"
+              >
                 <div className="text-4xl mb-3">{item.icon}</div>
                 <h4 className="text-lg font-bold text-gray-900 mb-1">{item.platform}</h4>
                 <span className="inline-block px-3 py-1 bg-blue-50 text-primary text-xs font-semibold rounded-full border border-blue-100 mb-3">

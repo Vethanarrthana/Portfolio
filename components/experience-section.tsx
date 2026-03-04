@@ -17,7 +17,7 @@ export function ExperienceSection() {
 
         <div className="max-w-3xl mx-auto space-y-4">
           {experience.list.map((exp, index) => (
-            <div key={index} className="bg-white rounded-xl border border-border shadow-sm hover:shadow-md transition-shadow duration-200 p-7">
+            <div key={index} className="bg-white rounded-xl border border-border shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 p-7">
               <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
                 <div className="flex items-start gap-4">
                   <div className="w-11 h-11 bg-blue-50 rounded-xl flex items-center justify-center border border-blue-100 flex-shrink-0">

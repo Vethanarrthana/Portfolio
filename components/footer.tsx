@@ -7,7 +7,7 @@ export function Footer() {
   const { hero } = portfolioContent
 
   return (
-    <footer className="bg-gray-900 text-white py-14">
+    <footer id="contact" className="bg-gray-900 text-white py-14">
       <div className="max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-3xl font-bold mb-2">Let's Connect</h2>
         <p className="text-gray-400 mb-8 max-w-md mx-auto">
@@ -30,7 +30,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-gray-800 pt-8 text-gray-500 text-sm">
-          © {new Date().getFullYear()} {hero.name} 
+          © {new Date().getFullYear()} {hero.name}
         </div>
       </div>
     </footer>

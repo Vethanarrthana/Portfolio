@@ -33,7 +33,7 @@ export function ProjectsSection() {
           {featuredProjects.map((project) => {
             const visual = PROJECT_ICONS[project.id] || PROJECT_ICONS[1]
             return (
-              <div key={project.id} className="bg-white rounded-xl border border-border shadow-sm hover:shadow-md transition-shadow duration-200 overflow-hidden flex flex-col">
+              <div key={project.id} className="bg-white rounded-xl border border-border shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 overflow-hidden flex flex-col">
                 {/* Top bar */}
                 <div className="h-1 bg-primary w-full" />
                 <div className="p-6 flex flex-col flex-1">
@@ -69,7 +69,7 @@ export function ProjectsSection() {
           {otherProjects.map((project) => {
             const visual = PROJECT_ICONS[project.id] || PROJECT_ICONS[3]
             return (
-              <div key={project.id} className="bg-white rounded-xl border border-border shadow-sm hover:shadow-md transition-shadow duration-200 p-6 flex gap-5">
+              <div key={project.id} className="bg-white rounded-xl border border-border shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 p-6 flex gap-5">
                 <div className={`w-12 h-12 rounded-xl border flex items-center justify-center flex-shrink-0 ${visual.color}`}>
                   {visual.icon}
                 </div>

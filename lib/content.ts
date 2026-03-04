@@ -21,7 +21,7 @@ export const portfolioContent = {
       "Full-Stack Developer skilled in MERN Stack, building and deploying real-world web applications",
       "Built AI Agents & Chatbots using LLaMA-3, LangChain, and Crew AI for intelligent task automation",
       "Hands-on ML projects including disease predictors and water quality analysis using Python & Flask/Django",
-      "Data storyteller — created insightful dashboards for 8,000+ Netflix shows & 10,000+ books using Power BI & Tableau",
+      "Data storyteller - created insightful dashboards for 8,000+ Netflix shows & 10,000+ books using Power BI & Tableau",
     ],
     stats: [
       { value: "12+", label: "Projects Built" },
@@ -219,7 +219,7 @@ export const portfolioContent = {
           "Built a full-stack news streaming web app using NewsAPI to show real-time news. Implemented search, category filtering, and user authentication with saved articles stored in MongoDB. Designed a responsive React UI for seamless news reading.",
         image: "",
         tech: ["React", "Node.js", "Express.js", "MongoDB", "NewsAPI"],
-        github: "https://github.com/Vethanarrthana",
+        github: "https://github.com/Vethanarrthana/ShortNewsStreamer-Frontend",
         live: "",
         featured: false,
       },
@@ -241,7 +241,7 @@ export const portfolioContent = {
         position: "AI Agents Intern",
         duration: "2025",
         description:
-          "Designed and built intelligent AI Agents and Chatbots using LLaMA-3 for goal-driven tasks like Medical Triage, Appointment Booking, and Customer Support. Developed Multi-Agent Systems including a Translator, Code Generator, Onboarding Assistant, and Joke Generator using Conversable agents — focusing on prompt engineering, agent collaboration, and real-time task execution. Tech Stack: Python, Streamlit, Crew AI, LangChain, LLaMA-3, APIs.",
+          "Designed and built intelligent AI Agents and Chatbots using LLaMA-3 for goal-driven tasks like Medical Triage, Appointment Booking, and Customer Support. Developed Multi-Agent Systems including a Translator, Code Generator, Onboarding Assistant, and Joke Generator using Conversable agents - focusing on prompt engineering, agent collaboration, and real-time task execution. Tech Stack: Python, Streamlit, Crew AI, LangChain, LLaMA-3, APIs.",
       },
       {
         company: "App Innovation Technologies",
@@ -290,7 +290,7 @@ export const educationData = [
     institution: "Sri Eshwar College of Engineering",
     location: "Coimbatore, Tamil Nadu",
     duration: "2023 – 2027",
-    grade: "CGPA: 8.33",
+    grade: "CGPA: 8.33 (up to 3rd semester)",
     icon: "🎓",
   },
   {
