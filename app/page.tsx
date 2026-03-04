@@ -7,21 +7,24 @@ import { ProjectsSection } from "@/components/projects-section"
 import { ExperienceSection } from "@/components/experience-section"
 import { CertificationsSection } from "@/components/certifications-section"
 import { Footer } from "@/components/footer"
+import { RevealWrapper } from "@/components/reveal-wrapper"
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-background">
       <Navbar />
-      <div className="pt-16">
-        <HeroSection />
-        <AboutSection />
-        <EducationSection />
-        <SkillsSection />
-        <ProjectsSection />
-        <ExperienceSection />
-        <CertificationsSection />
-        <Footer />
-      </div>
+      <RevealWrapper>
+        <div className="pt-16">
+          <HeroSection />
+          <AboutSection />
+          <EducationSection />
+          <SkillsSection />
+          <ProjectsSection />
+          <ExperienceSection />
+          <CertificationsSection />
+          <Footer />
+        </div>
+      </RevealWrapper>
     </main>
   )
 }

@@ -11,13 +11,13 @@ export function SkillsSection() {
   return (
     <section id="skills" className="py-20 bg-gray-50 border-b border-border">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-14">
+        <div className="text-center mb-14 reveal">
           <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-2">Skills</p>
           <h2 className="text-4xl font-bold text-gray-900">Technical Expertise</h2>
           <div className="w-10 h-1 bg-primary rounded mx-auto mt-4" />
         </div>
 
-        {/* Category tabs */}
+        {/* Tabs - NO reveal class so they always work */}
         <div className="flex flex-wrap justify-center gap-2 mb-10">
           {skills.categories.map((cat, index) => (
             <button
@@ -34,7 +34,7 @@ export function SkillsSection() {
           ))}
         </div>
 
-        {/* Skills grid */}
+        {/* Skills grid - NO reveal class, just hover */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
           {currentCategory.skills.map((skill) => (
             <div
@@ -52,21 +52,18 @@ export function SkillsSection() {
 
         {/* Achievements */}
         <div className="mt-16">
-          <div className="text-center mb-10">
+          <div className="text-center mb-10 reveal">
             <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-2">Achievements</p>
             <h3 className="text-3xl font-bold text-gray-900">Programming Milestones</h3>
             <div className="w-10 h-1 bg-primary rounded mx-auto mt-4" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {[
-              { platform: "CodeChef", icon: "👨‍🍳", badge: "Bronze Badge", stat: "🥉", desc: "Consistent participation in competitive programming contests." },
-              { platform: "SkillRack", icon: "⚡", badge: "300+ Problems", stat: "300+", desc: "Solved 300+ problems across difficulty levels, strengthening DSA." },
-              { platform: "LeetCode", icon: "🧩", badge: "200+ Problems", stat: "200+", desc: "200+ algorithmic challenges covering arrays, trees, graphs & DP." },
+              { platform: "CodeChef",  icon: "👨‍🍳", badge: "Bronze Badge",    desc: "Consistent participation in competitive programming contests." },
+              { platform: "SkillRack", icon: "⚡",   badge: "300+ Problems",   desc: "Solved 300+ problems across difficulty levels, strengthening DSA." },
+              { platform: "LeetCode",  icon: "🧩",   badge: "200+ Problems",   desc: "200+ algorithmic challenges covering arrays, trees, graphs & DP." },
             ].map((item, i) => (
-              <div
-                key={i}
-                className="bg-white rounded-xl p-6 border border-border shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 text-center"
-              >
+              <div key={i} className="bg-white rounded-xl p-6 border border-border shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 text-center reveal">
                 <div className="text-4xl mb-3">{item.icon}</div>
                 <h4 className="text-lg font-bold text-gray-900 mb-1">{item.platform}</h4>
                 <span className="inline-block px-3 py-1 bg-blue-50 text-primary text-xs font-semibold rounded-full border border-blue-100 mb-3">
